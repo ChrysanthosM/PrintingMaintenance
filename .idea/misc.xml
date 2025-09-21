@@ -5,6 +5,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../PrintingDataImport/PrintingDataImport/pom.xml" />
+        <option value="$PROJECT_DIR$/../PrintingUX/PrintingUX/pom.xml" />
+        <option value="$PROJECT_DIR$/../PrintingCore/PrintingCore/pom.xml" />
+        <option value="$PROJECT_DIR$/../../QueryRepository/QueryRepository/pom.xml" />
       </list>
     </option>
   </component>
