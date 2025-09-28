@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/../PrintingCore/PrintingCore/pom.xml" />
         <option value="$PROJECT_DIR$/../../QueryRepository/QueryRepository/pom.xml" />
         <option value="$PROJECT_DIR$/../PrintingDataImport/pom.xml" />
+        <option value="$PROJECT_DIR$/../PrintingDataCore/pom.xml" />
       </list>
     </option>
   </component>
