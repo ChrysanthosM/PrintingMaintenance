@@ -13,6 +13,7 @@
         <module>../PrintingDataImport</module>
         <module>../PrintingDataCore</module>
         <module>../../QueryRepository/QueryRepository</module>
+        <module>../PrintingDataPanel/PrintingDataPanel</module>
     </modules>
 
     <properties>
