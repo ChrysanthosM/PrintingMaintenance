@@ -20676,3 +20676,1192 @@ Caused by: java.net.ConnectException: Connection refused: getsockopt
 2025-12-24 11:09:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'mssqlPU'
 2025-12-24 11:09:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-12-24 11:09:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-26 12:05:41 INFO  org.masouras.app.ApplicationRun - Starting ApplicationRun using Java 25.0.1 with PID 18808 (D:\MyDocuments\Programming\Java\PrintingMaintenance\PrintingDataImport\target\classes started by ChrysanthosM in D:\MyDocuments\Programming\Java\PrintingMaintenance\PrintingMaintenance)
+2025-12-26 12:05:41 INFO  org.masouras.app.ApplicationRun - The following 1 profile is active: "dev"
+2025-12-26 12:05:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-26 12:05:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-12-26 12:05:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 MongoDB repository interfaces.
+2025-12-26 12:05:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-26 12:05:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-26 12:05:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 JPA repository interfaces.
+2025-12-26 12:05:44 INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2025-12-26 12:05:44 INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2025-12-26 12:05:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-26 12:05:45 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-26 12:05:45 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 12:05:45 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-26 12:05:45 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-26 12:05:45 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3710 ms
+2025-12-26 12:05:46 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2025-12-26 12:05:46 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-26 12:05:46 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-26 12:05:46 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+2025-12-26 12:06:29 INFO  org.masouras.ApplicationRun - Starting ApplicationRun using Java 25.0.1 with PID 19304 (D:\MyDocuments\Programming\Java\PrintingMaintenance\PrintingDataImport\target\classes started by ChrysanthosM in D:\MyDocuments\Programming\Java\PrintingMaintenance\PrintingMaintenance)
+2025-12-26 12:06:29 INFO  org.masouras.ApplicationRun - The following 1 profile is active: "dev"
+2025-12-26 12:06:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-26 12:06:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-26 12:06:31 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface org.masouras.trace.control.repository.SpanInfoMongoRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-12-26 12:06:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 444 ms. Found 6 JPA repository interfaces.
+2025-12-26 12:06:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-26 12:06:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-12-26 12:06:31 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.ActivityRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 12:06:31 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.LetterSetUpRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 12:06:31 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.PrintingDataRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 12:06:31 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.PrintingFilesRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 12:06:31 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.PrintingOptionsRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 12:06:31 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.PrintingSetUpRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 12:06:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 126 ms. Found 1 MongoDB repository interface.
+2025-12-26 12:06:32 INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2025-12-26 12:06:32 INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2025-12-26 12:06:32 WARN  o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'j2SqlBeansRegistry' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static' and/or marking the containing configuration class as 'proxyBeanMethods=false'.
+2025-12-26 12:06:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-26 12:06:34 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-26 12:06:34 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 12:06:34 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-26 12:06:34 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-26 12:06:34 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4632 ms
+2025-12-26 12:06:34 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-26 12:06:35 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: e9e9f9f4-7cc8-424c-81c3-c39df646e9e6
+2025-12-26 12:06:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-26 12:06:35 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: mssqlPU]
+2025-12-26 12:06:36 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-26 12:06:36 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-26 12:06:36 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-26 12:06:37 WARN  org.hibernate.orm.deprecation - HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-26 12:06:37 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-26 12:06:38 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-26 12:06:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'mssqlPU'
+2025-12-26 12:06:41 INFO  org.reflections.Reflections - Reflections took 2079 ms to scan 169 urls, producing 12296 keys and 48433 values
+2025-12-26 12:06:43 INFO  o.masouras.base.repo.base.AbstractJ2 - PrintingOptionsJ2SQL loaded in 24
+2025-12-26 12:06:43 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 102, SQLState: S0001
+2025-12-26 12:06:43 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Incorrect syntax near '='.
+2025-12-26 12:06:43 ERROR o.m.d.c.s.PrintingLetterSetUpService - Refresh of PrintingLetterSetUpService failed with message: JDBC exception executing SQL [SELECT T0.ACTIVITY_TYPE, T0.CONTENT_TYPE, T0.LETTER_TYPE, J1.XSL_TYPE, J1.RENDER_TYPE, J1.VALID_FLAG FROM PrintingSetUpTable AS T0 FULL JOIN LetterSetUpTable AS J1 ON (T0.LETTER_TYPE = J1.LETTER_TYPE) WHERE (J1.VALID_FLAG NOT = 'DISABLED') ORDER BY T0.SEQ_NO ASC, J1.SEQ_NO ASC] [Incorrect syntax near '='.] [n/a]
+org.hibernate.exception.SQLGrammarException: JDBC exception executing SQL [SELECT T0.ACTIVITY_TYPE, T0.CONTENT_TYPE, T0.LETTER_TYPE, J1.XSL_TYPE, J1.RENDER_TYPE, J1.VALID_FLAG FROM PrintingSetUpTable AS T0 FULL JOIN LetterSetUpTable AS J1 ON (T0.LETTER_TYPE = J1.LETTER_TYPE) WHERE (J1.VALID_FLAG NOT = 'DISABLED') ORDER BY T0.SEQ_NO ASC, J1.SEQ_NO ASC] [Incorrect syntax near '='.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:269)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:172)
+	at org.hibernate.sql.results.jdbc.internal.AbstractResultSetAccess.getMetaData(AbstractResultSetAccess.java:36)
+	at org.hibernate.sql.results.jdbc.internal.AbstractResultSetAccess.getColumnCount(AbstractResultSetAccess.java:52)
+	at org.hibernate.query.results.ResultSetMappingImpl.resolve(ResultSetMappingImpl.java:194)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:340)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:137)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:102)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:165)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:142)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:132)
+	at org.hibernate.query.sql.internal.NativeSelectQueryPlanImpl.performList(NativeSelectQueryPlanImpl.java:135)
+	at org.hibernate.query.sql.internal.NativeQueryImpl.doList(NativeQueryImpl.java:697)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:143)
+	at org.hibernate.query.Query.getResultList(Query.java:120)
+	at org.masouras.data.boundary.RepositoryFacade.getPrintingLetterSetUpProjections(RepositoryFacade.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:724)
+	at org.masouras.data.boundary.RepositoryFacade$$SpringCGLIB$$0.getPrintingLetterSetUpProjections(<generated>)
+	at org.masouras.data.control.service.PrintingLetterSetUpService.refresh(PrintingLetterSetUpService.java:41)
+	at org.masouras.data.control.service.PrintingLetterSetUpService.init(PrintingLetterSetUpService.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:2021)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1985)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1875)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1843)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1719)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at org.masouras.ApplicationRun.main(ApplicationRun.java:13)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '='.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:278)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1787)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:688)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:607)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7745)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4706)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:321)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:253)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(SQLServerPreparedStatement.java:521)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:251)
+	... 80 common frames omitted
+2025-12-26 12:06:43 INFO  o.masouras.base.repo.base.AbstractJ2 - PrintingDataJ2SQL loaded in 10
+2025-12-26 12:06:44 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:85)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:85)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:233)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:219)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176)
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:543)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:104)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:79)
+	... 3 common frames omitted
+2025-12-26 12:06:44 INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Azul Systems, Inc./25.0.1+8-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@37d61cea], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@1748e38e, com.mongodb.Jep395RecordCodecProvider@43cd2f26, com.mongodb.KotlinCodecProvider@7d043960]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@24cc4f2a], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-12-26 12:06:45 INFO  o.m.app.config.OpenTelemetryConfig - ⚠️ Exporter disabled via configuration, spans will not be exported
+2025-12-26 12:06:46 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-26 12:06:47 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-12-26 12:06:47 INFO  o.masouras.base.repo.base.AbstractJ2 - ActivityJ2SQL loaded in 1
+2025-12-26 12:06:47 INFO  o.masouras.base.repo.base.AbstractJ2 - PrintingFilesJ2SQL loaded in 1
+2025-12-26 12:06:47 INFO  o.masouras.base.repo.base.AbstractJ2 - AutoNumberingJ2SQL loaded in 3
+2025-12-26 12:06:47 INFO  o.masouras.base.repo.base.AbstractJ2 - OptionsJ2SQL loaded in 2
+2025-12-26 12:06:47 INFO  o.masouras.base.repo.base.AbstractJ2 - UsersJ2SQL loaded in 1
+2025-12-26 12:06:47 INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-12-26 12:06:47 INFO  o.s.i.c.PublishSubscribeChannel - Channel 'printing.data.import.errorChannel' has 1 subscriber(s).
+2025-12-26 12:06:47 INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2025-12-26 12:06:47 INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {service-activator} as a subscriber to the 'okPollingFlow.channel#0' channel
+2025-12-26 12:06:47 INFO  o.s.i.channel.DirectChannel - Channel 'printing.data.import.okPollingFlow.channel#0' has 1 subscriber(s).
+2025-12-26 12:06:47 INFO  o.s.i.endpoint.EventDrivenConsumer - started bean 'okPollingFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 12:06:47 INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {file:outbound-channel-adapter} as a subscriber to the 'okPollingFlow.channel#1' channel
+2025-12-26 12:06:47 INFO  o.s.i.channel.DirectChannel - Channel 'printing.data.import.okPollingFlow.channel#1' has 1 subscriber(s).
+2025-12-26 12:06:47 INFO  o.s.i.endpoint.EventDrivenConsumer - started bean 'okPollingFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 12:06:47 INFO  o.s.i.e.SourcePollingChannelAdapter - started bean 'okPollingFlow.org.springframework.integration.config.SourcePollingChannelAdapterFactoryBean#0'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 12:06:47 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-26 12:06:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-26 12:06:47 INFO  org.masouras.ApplicationRun - Started ApplicationRun in 19.484 seconds (process running for 20.474)
+2025-12-26 12:06:48 INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2025-12-26 12:06:48 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] launched with the following parameters: [{'time':'{value=1766743608010, type=class java.lang.Long, identifying=true}'}]
+2025-12-26 12:06:48 INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [pmpMainStep]
+2025-12-26 12:06:48 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 4
+2025-12-26 12:06:48 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] launched with the following parameters: [{}]
+2025-12-26 12:06:48 INFO  o.s.batch.core.job.SimpleStepHandler - Step already complete or not restartable, so no action to execute: StepExecution: id=793, version=32, name=pmpMainStep, status=ABANDONED, exitStatus=FAILED, readCount=0, filterCount=0, writeCount=0, readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=0, rollbackCount=1, exitDescription=org.springframework.batch.core.step.skip.NonSkippableReadException: Non-skippable exception during read
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:104)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:68)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:68)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:165)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:140)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:132)
+	at org.springframework.batch.core.job.AbstractJob.execu
+2025-12-26 12:06:48 INFO  o.s.batch.core.job.SimpleStepHandler - Step already complete or not restartable, so no action to execute: StepExecution: id=794, version=3, name=pmpReportStep, status=COMPLETED, exitStatus=COMPLETED, readCount=0, filterCount=0, writeCount=0, readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0, exitDescription=
+2025-12-26 12:06:48 INFO  o.s.batch.core.job.SimpleStepHandler - Step already complete or not restartable, so no action to execute: StepExecution: id=796, version=3, name=pmpNotifyStep, status=COMPLETED, exitStatus=COMPLETED, readCount=0, filterCount=0, writeCount=0, readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0, exitDescription=
+2025-12-26 12:06:48 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 65ms
+2025-12-26 12:06:48 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 4
+2025-12-26 12:06:48 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 5
+2025-12-26 12:06:48 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 5
+2025-12-26 12:06:48 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 6
+2025-12-26 12:06:48 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 6
+2025-12-26 12:06:48 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 7
+2025-12-26 12:06:48 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 7
+2025-12-26 12:06:48 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 8
+2025-12-26 12:06:48 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 8
+2025-12-26 12:06:48 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 9
+2025-12-26 12:06:48 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 9
+2025-12-26 12:06:48 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 4 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 12:06:48 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 5 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 12:06:48 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 6 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 12:06:48 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 7 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 12:06:48 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 8 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 12:06:48 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 9 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 12:06:48 INFO  o.s.b.core.step.tasklet.TaskletStep - Commit failed while step execution data was already updated. Reverting to old version.
+2025-12-26 12:06:48 INFO  o.s.batch.core.step.AbstractStep - Step: [pmpMainStep] executed in 436ms
+2025-12-26 12:06:48 INFO  o.m.a.b.pmp.config.PmpStepsConfig - pmpMainStep ExitStatus NOOP
+2025-12-26 12:06:48 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] completed with the following parameters: [{'time':'{value=1766743608010, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 526ms
+2025-12-26 12:06:57 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] launched with the following parameters: [{'time':'{value=1766743617953, type=class java.lang.Long, identifying=true}'}]
+2025-12-26 12:06:58 INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [pmpMainStep]
+2025-12-26 12:06:58 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 4
+2025-12-26 12:06:58 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 4
+2025-12-26 12:06:58 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 5
+2025-12-26 12:06:58 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 5
+2025-12-26 12:06:58 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 6
+2025-12-26 12:06:58 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 6
+2025-12-26 12:06:58 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 7
+2025-12-26 12:06:58 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 7
+2025-12-26 12:06:58 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 8
+2025-12-26 12:06:58 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 8
+2025-12-26 12:06:58 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 9
+2025-12-26 12:06:58 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 9
+2025-12-26 12:06:58 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 4 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 12:06:58 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 5 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 12:06:58 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 6 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 12:06:58 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 7 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 12:06:58 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 8 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 12:06:58 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 9 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 12:06:58 INFO  o.s.b.core.step.tasklet.TaskletStep - Commit failed while step execution data was already updated. Reverting to old version.
+2025-12-26 12:06:58 INFO  o.s.batch.core.step.AbstractStep - Step: [pmpMainStep] executed in 128ms
+2025-12-26 12:06:58 INFO  o.m.a.b.pmp.config.PmpStepsConfig - pmpMainStep ExitStatus NOOP
+2025-12-26 12:06:58 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] completed with the following parameters: [{'time':'{value=1766743617953, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 172ms
+2025-12-26 12:07:00 WARN  o.m.t.c.scheduler.SpanInfoManager - mongoConnectionString not found, spanInfoQueue will clear 0 entries
+2025-12-26 12:07:00 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-26 12:07:00 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-26 12:07:00 INFO  o.s.i.e.SourcePollingChannelAdapter - stopped bean 'okPollingFlow.org.springframework.integration.config.SourcePollingChannelAdapterFactoryBean#0'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 12:07:00 INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {service-activator} as a subscriber to the 'okPollingFlow.channel#0' channel
+2025-12-26 12:07:00 INFO  o.s.i.channel.DirectChannel - Channel 'printing.data.import.okPollingFlow.channel#0' has 0 subscriber(s).
+2025-12-26 12:07:00 INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean 'okPollingFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 12:07:00 INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {file:outbound-channel-adapter} as a subscriber to the 'okPollingFlow.channel#1' channel
+2025-12-26 12:07:00 INFO  o.s.i.channel.DirectChannel - Channel 'printing.data.import.okPollingFlow.channel#1' has 0 subscriber(s).
+2025-12-26 12:07:00 INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean 'okPollingFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 12:07:00 INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-12-26 12:07:00 INFO  o.s.i.c.PublishSubscribeChannel - Channel 'printing.data.import.errorChannel' has 0 subscriber(s).
+2025-12-26 12:07:00 INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2025-12-26 12:07:00 WARN  o.m.t.c.scheduler.SpanInfoManager - mongoConnectionString not found, spanInfoQueue will clear 0 entries
+2025-12-26 12:07:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'mssqlPU'
+2025-12-26 12:07:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-26 12:07:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-26 14:16:18 INFO  org.masouras.app.ApplicationRun - Starting ApplicationRun using Java 25.0.1 with PID 21656 (D:\MyDocuments\Programming\Java\PrintingMaintenance\PrintingDataImport\target\classes started by ChrysanthosM in D:\MyDocuments\Programming\Java\PrintingMaintenance\PrintingMaintenance)
+2025-12-26 14:16:18 INFO  org.masouras.app.ApplicationRun - The following 1 profile is active: "dev"
+2025-12-26 14:16:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-26 14:16:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-12-26 14:16:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 0 MongoDB repository interfaces.
+2025-12-26 14:16:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-26 14:16:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-26 14:16:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 JPA repository interfaces.
+2025-12-26 14:16:21 INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2025-12-26 14:16:21 INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2025-12-26 14:16:22 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-26 14:16:23 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-26 14:16:23 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 14:16:23 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-26 14:16:23 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-26 14:16:23 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4588 ms
+2025-12-26 14:16:23 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2025-12-26 14:16:23 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-26 14:16:23 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-26 14:16:23 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+2025-12-26 14:40:06 INFO  org.masouras.ApplicationRun - Starting ApplicationRun using Java 25.0.1 with PID 12160 (D:\MyDocuments\Programming\Java\PrintingMaintenance\PrintingDataImport\target\classes started by ChrysanthosM in D:\MyDocuments\Programming\Java\PrintingMaintenance\PrintingMaintenance)
+2025-12-26 14:40:06 INFO  org.masouras.ApplicationRun - The following 1 profile is active: "dev"
+2025-12-26 14:40:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-26 14:40:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-26 14:40:08 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface org.masouras.trace.control.repository.SpanInfoMongoRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-12-26 14:40:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 465 ms. Found 6 JPA repository interfaces.
+2025-12-26 14:40:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-26 14:40:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-12-26 14:40:08 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.ActivityRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 14:40:08 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.LetterSetUpRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 14:40:08 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.PrintingDataRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 14:40:08 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.PrintingFilesRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 14:40:08 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.PrintingOptionsRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 14:40:08 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.PrintingSetUpRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 14:40:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 132 ms. Found 1 MongoDB repository interface.
+2025-12-26 14:40:10 INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2025-12-26 14:40:10 INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2025-12-26 14:40:10 WARN  o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'j2SqlBeansRegistry' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static' and/or marking the containing configuration class as 'proxyBeanMethods=false'.
+2025-12-26 14:40:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-26 14:40:11 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-26 14:40:11 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 14:40:11 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-26 14:40:11 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-26 14:40:11 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4715 ms
+2025-12-26 14:40:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-26 14:40:12 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 7ff1ae4c-bdb7-4406-8587-cc54153e8d50
+2025-12-26 14:40:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-26 14:40:13 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: mssqlPU]
+2025-12-26 14:40:13 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-26 14:40:13 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-26 14:40:14 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-26 14:40:14 WARN  org.hibernate.orm.deprecation - HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-26 14:40:14 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-26 14:40:16 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-26 14:40:16 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'mssqlPU'
+2025-12-26 14:40:18 INFO  org.reflections.Reflections - Reflections took 2072 ms to scan 169 urls, producing 12296 keys and 48433 values
+2025-12-26 14:40:20 INFO  o.masouras.base.repo.base.AbstractJ2 - PrintingOptionsJ2SQL loaded in 26
+2025-12-26 14:40:20 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 102, SQLState: S0001
+2025-12-26 14:40:20 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Incorrect syntax near '='.
+2025-12-26 14:40:20 ERROR o.m.d.c.s.PrintingLetterSetUpService - Refresh of PrintingLetterSetUpService failed with message: JDBC exception executing SQL [SELECT T0.ACTIVITY_TYPE, T0.CONTENT_TYPE, T0.LETTER_TYPE, J1.XSL_TYPE, J1.RENDER_TYPE, J1.VALID_FLAG FROM PrintingSetUpTable AS T0 FULL JOIN LetterSetUpTable AS J1 ON (T0.LETTER_TYPE = J1.LETTER_TYPE) WHERE (J1.VALID_FLAG NOT = 'DISABLED') ORDER BY T0.SEQ_NO ASC, J1.SEQ_NO ASC] [Incorrect syntax near '='.] [n/a]
+org.hibernate.exception.SQLGrammarException: JDBC exception executing SQL [SELECT T0.ACTIVITY_TYPE, T0.CONTENT_TYPE, T0.LETTER_TYPE, J1.XSL_TYPE, J1.RENDER_TYPE, J1.VALID_FLAG FROM PrintingSetUpTable AS T0 FULL JOIN LetterSetUpTable AS J1 ON (T0.LETTER_TYPE = J1.LETTER_TYPE) WHERE (J1.VALID_FLAG NOT = 'DISABLED') ORDER BY T0.SEQ_NO ASC, J1.SEQ_NO ASC] [Incorrect syntax near '='.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:269)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:172)
+	at org.hibernate.sql.results.jdbc.internal.AbstractResultSetAccess.getMetaData(AbstractResultSetAccess.java:36)
+	at org.hibernate.sql.results.jdbc.internal.AbstractResultSetAccess.getColumnCount(AbstractResultSetAccess.java:52)
+	at org.hibernate.query.results.ResultSetMappingImpl.resolve(ResultSetMappingImpl.java:194)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:340)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:137)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:102)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:165)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:142)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:132)
+	at org.hibernate.query.sql.internal.NativeSelectQueryPlanImpl.performList(NativeSelectQueryPlanImpl.java:135)
+	at org.hibernate.query.sql.internal.NativeQueryImpl.doList(NativeQueryImpl.java:697)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:143)
+	at org.hibernate.query.Query.getResultList(Query.java:120)
+	at org.masouras.data.boundary.RepositoryFacade.getPrintingLetterSetUpProjections(RepositoryFacade.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:724)
+	at org.masouras.data.boundary.RepositoryFacade$$SpringCGLIB$$0.getPrintingLetterSetUpProjections(<generated>)
+	at org.masouras.data.control.service.PrintingLetterSetUpService.refresh(PrintingLetterSetUpService.java:41)
+	at org.masouras.data.control.service.PrintingLetterSetUpService.init(PrintingLetterSetUpService.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:2021)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1985)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1875)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1843)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1719)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at org.masouras.ApplicationRun.main(ApplicationRun.java:13)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '='.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:278)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1787)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:688)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:607)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7745)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4706)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:321)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:253)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(SQLServerPreparedStatement.java:521)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:251)
+	... 80 common frames omitted
+2025-12-26 14:40:20 INFO  o.masouras.base.repo.base.AbstractJ2 - PrintingDataJ2SQL loaded in 10
+2025-12-26 14:40:21 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:85)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:85)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:233)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:219)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176)
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:543)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:104)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:79)
+	... 3 common frames omitted
+2025-12-26 14:40:21 INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Azul Systems, Inc./25.0.1+8-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@63c9017b], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@281edf6b, com.mongodb.Jep395RecordCodecProvider@77d50cde, com.mongodb.KotlinCodecProvider@4374c46e]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@6cb84986], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-12-26 14:40:22 INFO  o.m.app.config.OpenTelemetryConfig - ⚠️ Exporter disabled via configuration, spans will not be exported
+2025-12-26 14:40:22 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-26 14:40:24 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-12-26 14:40:24 INFO  o.masouras.base.repo.base.AbstractJ2 - ActivityJ2SQL loaded in 1
+2025-12-26 14:40:24 INFO  o.masouras.base.repo.base.AbstractJ2 - PrintingFilesJ2SQL loaded in 2
+2025-12-26 14:40:24 INFO  o.masouras.base.repo.base.AbstractJ2 - AutoNumberingJ2SQL loaded in 7
+2025-12-26 14:40:24 INFO  o.masouras.base.repo.base.AbstractJ2 - OptionsJ2SQL loaded in 1
+2025-12-26 14:40:24 INFO  o.masouras.base.repo.base.AbstractJ2 - UsersJ2SQL loaded in 1
+2025-12-26 14:40:24 INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-12-26 14:40:24 INFO  o.s.i.c.PublishSubscribeChannel - Channel 'printing.data.import.errorChannel' has 1 subscriber(s).
+2025-12-26 14:40:24 INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2025-12-26 14:40:24 INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {service-activator} as a subscriber to the 'okPollingFlow.channel#0' channel
+2025-12-26 14:40:24 INFO  o.s.i.channel.DirectChannel - Channel 'printing.data.import.okPollingFlow.channel#0' has 1 subscriber(s).
+2025-12-26 14:40:24 INFO  o.s.i.endpoint.EventDrivenConsumer - started bean 'okPollingFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 14:40:24 INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {file:outbound-channel-adapter} as a subscriber to the 'okPollingFlow.channel#1' channel
+2025-12-26 14:40:24 INFO  o.s.i.channel.DirectChannel - Channel 'printing.data.import.okPollingFlow.channel#1' has 1 subscriber(s).
+2025-12-26 14:40:24 INFO  o.s.i.endpoint.EventDrivenConsumer - started bean 'okPollingFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 14:40:24 INFO  o.s.i.e.SourcePollingChannelAdapter - started bean 'okPollingFlow.org.springframework.integration.config.SourcePollingChannelAdapterFactoryBean#0'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 14:40:24 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-26 14:40:24 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-26 14:40:25 INFO  org.masouras.ApplicationRun - Started ApplicationRun in 19.224 seconds (process running for 20.222)
+2025-12-26 14:40:25 INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2025-12-26 14:40:25 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] launched with the following parameters: [{'time':'{value=1766752825080, type=class java.lang.Long, identifying=true}'}]
+2025-12-26 14:40:25 INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [pmpMainStep]
+2025-12-26 14:40:25 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 4
+2025-12-26 14:40:25 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] launched with the following parameters: [{}]
+2025-12-26 14:40:25 INFO  o.s.batch.core.job.SimpleStepHandler - Step already complete or not restartable, so no action to execute: StepExecution: id=793, version=33, name=pmpMainStep, status=ABANDONED, exitStatus=FAILED, readCount=0, filterCount=0, writeCount=0, readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=0, rollbackCount=1, exitDescription=org.springframework.batch.core.step.skip.NonSkippableReadException: Non-skippable exception during read
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:104)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:68)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:68)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:165)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:140)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:132)
+	at org.springframework.batch.core.job.AbstractJob.execu
+2025-12-26 14:40:25 INFO  o.s.batch.core.job.SimpleStepHandler - Step already complete or not restartable, so no action to execute: StepExecution: id=794, version=3, name=pmpReportStep, status=COMPLETED, exitStatus=COMPLETED, readCount=0, filterCount=0, writeCount=0, readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0, exitDescription=
+2025-12-26 14:40:25 INFO  o.s.batch.core.job.SimpleStepHandler - Step already complete or not restartable, so no action to execute: StepExecution: id=796, version=3, name=pmpNotifyStep, status=COMPLETED, exitStatus=COMPLETED, readCount=0, filterCount=0, writeCount=0, readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0, exitDescription=
+2025-12-26 14:40:25 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 96ms
+2025-12-26 14:40:25 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 4
+2025-12-26 14:40:25 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 5
+2025-12-26 14:40:25 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 5
+2025-12-26 14:40:25 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 6
+2025-12-26 14:40:25 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 6
+2025-12-26 14:40:25 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 7
+2025-12-26 14:40:25 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 7
+2025-12-26 14:40:25 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 8
+2025-12-26 14:40:25 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 8
+2025-12-26 14:40:25 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 9
+2025-12-26 14:40:25 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 9
+2025-12-26 14:40:25 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 4 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:40:25 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 5 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:40:25 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 6 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:40:25 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 7 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:40:25 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 8 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:40:25 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 9 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:40:25 INFO  o.s.b.core.step.tasklet.TaskletStep - Commit failed while step execution data was already updated. Reverting to old version.
+2025-12-26 14:40:25 INFO  o.s.batch.core.step.AbstractStep - Step: [pmpMainStep] executed in 490ms
+2025-12-26 14:40:25 INFO  o.m.a.b.pmp.config.PmpStepsConfig - pmpMainStep ExitStatus NOOP
+2025-12-26 14:40:25 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] completed with the following parameters: [{'time':'{value=1766752825080, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 581ms
+2025-12-26 14:40:35 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] launched with the following parameters: [{'time':'{value=1766752835016, type=class java.lang.Long, identifying=true}'}]
+2025-12-26 14:40:35 INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [pmpMainStep]
+2025-12-26 14:40:35 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 4
+2025-12-26 14:40:35 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 4
+2025-12-26 14:40:35 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 5
+2025-12-26 14:40:35 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 5
+2025-12-26 14:40:35 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 6
+2025-12-26 14:40:35 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 6
+2025-12-26 14:40:35 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 7
+2025-12-26 14:40:35 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 7
+2025-12-26 14:40:35 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 8
+2025-12-26 14:40:35 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 8
+2025-12-26 14:40:35 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 9
+2025-12-26 14:40:35 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 9
+2025-12-26 14:40:35 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 4 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:40:35 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 5 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:40:35 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 6 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:40:35 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 7 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:40:35 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 8 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:40:35 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 9 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:40:35 INFO  o.s.b.core.step.tasklet.TaskletStep - Commit failed while step execution data was already updated. Reverting to old version.
+2025-12-26 14:40:35 INFO  o.s.batch.core.step.AbstractStep - Step: [pmpMainStep] executed in 117ms
+2025-12-26 14:40:35 INFO  o.m.a.b.pmp.config.PmpStepsConfig - pmpMainStep ExitStatus NOOP
+2025-12-26 14:40:35 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] completed with the following parameters: [{'time':'{value=1766752835016, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 153ms
+2025-12-26 14:40:44 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-26 14:40:44 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-26 14:40:44 INFO  o.s.i.e.SourcePollingChannelAdapter - stopped bean 'okPollingFlow.org.springframework.integration.config.SourcePollingChannelAdapterFactoryBean#0'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 14:40:44 INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {service-activator} as a subscriber to the 'okPollingFlow.channel#0' channel
+2025-12-26 14:40:44 INFO  o.s.i.channel.DirectChannel - Channel 'printing.data.import.okPollingFlow.channel#0' has 0 subscriber(s).
+2025-12-26 14:40:44 INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean 'okPollingFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 14:40:44 INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {file:outbound-channel-adapter} as a subscriber to the 'okPollingFlow.channel#1' channel
+2025-12-26 14:40:44 INFO  o.s.i.channel.DirectChannel - Channel 'printing.data.import.okPollingFlow.channel#1' has 0 subscriber(s).
+2025-12-26 14:40:44 INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean 'okPollingFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 14:40:44 INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-12-26 14:40:44 INFO  o.s.i.c.PublishSubscribeChannel - Channel 'printing.data.import.errorChannel' has 0 subscriber(s).
+2025-12-26 14:40:44 INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2025-12-26 14:40:44 WARN  o.m.t.c.scheduler.SpanInfoManager - mongoConnectionString not found, spanInfoQueue will clear 0 entries
+2025-12-26 14:40:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'mssqlPU'
+2025-12-26 14:40:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-26 14:40:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-26 14:41:53 INFO  org.masouras.ApplicationRun - Starting ApplicationRun using Java 25.0.1 with PID 20692 (D:\MyDocuments\Programming\Java\PrintingMaintenance\PrintingDataImport\target\classes started by ChrysanthosM in D:\MyDocuments\Programming\Java\PrintingMaintenance\PrintingMaintenance)
+2025-12-26 14:41:53 INFO  org.masouras.ApplicationRun - The following 1 profile is active: "dev"
+2025-12-26 14:41:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-26 14:41:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-26 14:41:55 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface org.masouras.trace.control.repository.SpanInfoMongoRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-12-26 14:41:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 454 ms. Found 6 JPA repository interfaces.
+2025-12-26 14:41:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-26 14:41:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-12-26 14:41:55 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.ActivityRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 14:41:55 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.LetterSetUpRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 14:41:55 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.PrintingDataRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 14:41:55 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.PrintingFilesRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 14:41:55 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.PrintingOptionsRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 14:41:55 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.PrintingSetUpRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 14:41:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 131 ms. Found 1 MongoDB repository interface.
+2025-12-26 14:41:57 INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2025-12-26 14:41:57 INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2025-12-26 14:41:57 WARN  o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'j2SqlBeansRegistry' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static' and/or marking the containing configuration class as 'proxyBeanMethods=false'.
+2025-12-26 14:41:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-26 14:41:58 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-26 14:41:58 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 14:41:58 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-26 14:41:58 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-26 14:41:58 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4799 ms
+2025-12-26 14:41:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-26 14:41:59 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: ad5a8a84-d8f8-4f47-b726-d0a5b45c295d
+2025-12-26 14:41:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-26 14:42:00 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: mssqlPU]
+2025-12-26 14:42:00 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-26 14:42:00 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-26 14:42:01 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-26 14:42:01 WARN  org.hibernate.orm.deprecation - HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-26 14:42:01 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-26 14:42:03 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-26 14:42:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'mssqlPU'
+2025-12-26 14:42:05 INFO  org.reflections.Reflections - Reflections took 2053 ms to scan 169 urls, producing 12296 keys and 48433 values
+2025-12-26 14:42:07 INFO  o.masouras.base.repo.base.AbstractJ2 - PrintingOptionsJ2SQL loaded in 31
+2025-12-26 14:42:07 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 102, SQLState: S0001
+2025-12-26 14:42:07 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Incorrect syntax near '='.
+2025-12-26 14:42:07 ERROR o.m.d.c.s.PrintingLetterSetUpService - Refresh of PrintingLetterSetUpService failed with message: JDBC exception executing SQL [SELECT T0.ACTIVITY_TYPE, T0.CONTENT_TYPE, T0.LETTER_TYPE, J1.XSL_TYPE, J1.RENDER_TYPE, J1.VALID_FLAG FROM PrintingSetUpTable AS T0 FULL JOIN LetterSetUpTable AS J1 ON (T0.LETTER_TYPE = J1.LETTER_TYPE) WHERE (J1.VALID_FLAG NOT = 'DISABLED') ORDER BY T0.SEQ_NO ASC, J1.SEQ_NO ASC] [Incorrect syntax near '='.] [n/a]
+org.hibernate.exception.SQLGrammarException: JDBC exception executing SQL [SELECT T0.ACTIVITY_TYPE, T0.CONTENT_TYPE, T0.LETTER_TYPE, J1.XSL_TYPE, J1.RENDER_TYPE, J1.VALID_FLAG FROM PrintingSetUpTable AS T0 FULL JOIN LetterSetUpTable AS J1 ON (T0.LETTER_TYPE = J1.LETTER_TYPE) WHERE (J1.VALID_FLAG NOT = 'DISABLED') ORDER BY T0.SEQ_NO ASC, J1.SEQ_NO ASC] [Incorrect syntax near '='.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:269)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:172)
+	at org.hibernate.sql.results.jdbc.internal.AbstractResultSetAccess.getMetaData(AbstractResultSetAccess.java:36)
+	at org.hibernate.sql.results.jdbc.internal.AbstractResultSetAccess.getColumnCount(AbstractResultSetAccess.java:52)
+	at org.hibernate.query.results.ResultSetMappingImpl.resolve(ResultSetMappingImpl.java:194)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:340)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:137)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:102)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:165)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:142)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:132)
+	at org.hibernate.query.sql.internal.NativeSelectQueryPlanImpl.performList(NativeSelectQueryPlanImpl.java:135)
+	at org.hibernate.query.sql.internal.NativeQueryImpl.doList(NativeQueryImpl.java:697)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:143)
+	at org.hibernate.query.Query.getResultList(Query.java:120)
+	at org.masouras.data.boundary.RepositoryFacade.getPrintingLetterSetUpProjections(RepositoryFacade.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:724)
+	at org.masouras.data.boundary.RepositoryFacade$$SpringCGLIB$$0.getPrintingLetterSetUpProjections(<generated>)
+	at org.masouras.data.control.service.PrintingLetterSetUpService.refresh(PrintingLetterSetUpService.java:41)
+	at org.masouras.data.control.service.PrintingLetterSetUpService.init(PrintingLetterSetUpService.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:2021)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1985)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1875)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1843)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1719)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at org.masouras.ApplicationRun.main(ApplicationRun.java:13)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '='.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:278)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1787)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:688)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:607)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7745)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4706)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:321)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:253)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(SQLServerPreparedStatement.java:521)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:251)
+	... 80 common frames omitted
+2025-12-26 14:42:07 INFO  o.masouras.base.repo.base.AbstractJ2 - PrintingDataJ2SQL loaded in 8
+2025-12-26 14:42:08 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:85)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:85)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:233)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:219)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176)
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:543)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:104)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:79)
+	... 3 common frames omitted
+2025-12-26 14:42:08 INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Azul Systems, Inc./25.0.1+8-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@592bc6a7], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@71fd650b, com.mongodb.Jep395RecordCodecProvider@6a9f41ff, com.mongodb.KotlinCodecProvider@ad92442]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@56ed0511], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-12-26 14:42:09 INFO  o.m.app.config.OpenTelemetryConfig - ⚠️ Exporter disabled via configuration, spans will not be exported
+2025-12-26 14:42:10 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-26 14:42:11 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-12-26 14:42:11 INFO  o.masouras.base.repo.base.AbstractJ2 - ActivityJ2SQL loaded in 1
+2025-12-26 14:42:11 INFO  o.masouras.base.repo.base.AbstractJ2 - PrintingFilesJ2SQL loaded in 1
+2025-12-26 14:42:11 INFO  o.masouras.base.repo.base.AbstractJ2 - AutoNumberingJ2SQL loaded in 3
+2025-12-26 14:42:11 INFO  o.masouras.base.repo.base.AbstractJ2 - OptionsJ2SQL loaded in 1
+2025-12-26 14:42:11 INFO  o.masouras.base.repo.base.AbstractJ2 - UsersJ2SQL loaded in 0
+2025-12-26 14:42:12 INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-12-26 14:42:12 INFO  o.s.i.c.PublishSubscribeChannel - Channel 'printing.data.import.errorChannel' has 1 subscriber(s).
+2025-12-26 14:42:12 INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2025-12-26 14:42:12 INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {service-activator} as a subscriber to the 'okPollingFlow.channel#0' channel
+2025-12-26 14:42:12 INFO  o.s.i.channel.DirectChannel - Channel 'printing.data.import.okPollingFlow.channel#0' has 1 subscriber(s).
+2025-12-26 14:42:12 INFO  o.s.i.endpoint.EventDrivenConsumer - started bean 'okPollingFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 14:42:12 INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {file:outbound-channel-adapter} as a subscriber to the 'okPollingFlow.channel#1' channel
+2025-12-26 14:42:12 INFO  o.s.i.channel.DirectChannel - Channel 'printing.data.import.okPollingFlow.channel#1' has 1 subscriber(s).
+2025-12-26 14:42:12 INFO  o.s.i.endpoint.EventDrivenConsumer - started bean 'okPollingFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 14:42:12 INFO  o.s.i.e.SourcePollingChannelAdapter - started bean 'okPollingFlow.org.springframework.integration.config.SourcePollingChannelAdapterFactoryBean#0'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 14:42:12 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-26 14:42:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-26 14:42:12 INFO  org.masouras.ApplicationRun - Started ApplicationRun in 19.671 seconds (process running for 20.715)
+2025-12-26 14:42:12 INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2025-12-26 14:42:12 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] launched with the following parameters: [{'time':'{value=1766752932356, type=class java.lang.Long, identifying=true}'}]
+2025-12-26 14:42:12 INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [pmpMainStep]
+2025-12-26 14:42:12 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 4
+2025-12-26 14:42:12 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] launched with the following parameters: [{}]
+2025-12-26 14:42:12 INFO  o.s.batch.core.job.SimpleStepHandler - Step already complete or not restartable, so no action to execute: StepExecution: id=793, version=34, name=pmpMainStep, status=ABANDONED, exitStatus=FAILED, readCount=0, filterCount=0, writeCount=0, readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=0, rollbackCount=1, exitDescription=org.springframework.batch.core.step.skip.NonSkippableReadException: Non-skippable exception during read
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:104)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:68)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:68)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:165)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:140)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:132)
+	at org.springframework.batch.core.job.AbstractJob.execu
+2025-12-26 14:42:12 INFO  o.s.batch.core.job.SimpleStepHandler - Step already complete or not restartable, so no action to execute: StepExecution: id=794, version=3, name=pmpReportStep, status=COMPLETED, exitStatus=COMPLETED, readCount=0, filterCount=0, writeCount=0, readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0, exitDescription=
+2025-12-26 14:42:12 INFO  o.s.batch.core.job.SimpleStepHandler - Step already complete or not restartable, so no action to execute: StepExecution: id=796, version=3, name=pmpNotifyStep, status=COMPLETED, exitStatus=COMPLETED, readCount=0, filterCount=0, writeCount=0, readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0, exitDescription=
+2025-12-26 14:42:12 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 100ms
+2025-12-26 14:42:12 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 4
+2025-12-26 14:42:12 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 5
+2025-12-26 14:42:12 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 5
+2025-12-26 14:42:12 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 6
+2025-12-26 14:42:12 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 6
+2025-12-26 14:42:12 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 7
+2025-12-26 14:42:12 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 7
+2025-12-26 14:42:12 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 8
+2025-12-26 14:42:13 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 8
+2025-12-26 14:42:13 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 9
+2025-12-26 14:42:13 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 9
+2025-12-26 14:42:13 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 4 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:42:13 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 5 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:42:13 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 6 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:42:13 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 7 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:42:13 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 8 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:42:13 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 9 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 14:42:13 INFO  o.s.b.core.step.tasklet.TaskletStep - Commit failed while step execution data was already updated. Reverting to old version.
+2025-12-26 14:42:13 INFO  o.s.batch.core.step.AbstractStep - Step: [pmpMainStep] executed in 505ms
+2025-12-26 14:42:13 INFO  o.m.a.b.pmp.config.PmpStepsConfig - pmpMainStep ExitStatus NOOP
+2025-12-26 14:42:13 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] completed with the following parameters: [{'time':'{value=1766752932356, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 643ms
+2025-12-26 14:42:18 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-26 14:42:18 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-26 14:42:18 INFO  o.s.i.e.SourcePollingChannelAdapter - stopped bean 'okPollingFlow.org.springframework.integration.config.SourcePollingChannelAdapterFactoryBean#0'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 14:42:18 INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {service-activator} as a subscriber to the 'okPollingFlow.channel#0' channel
+2025-12-26 14:42:18 INFO  o.s.i.channel.DirectChannel - Channel 'printing.data.import.okPollingFlow.channel#0' has 0 subscriber(s).
+2025-12-26 14:42:18 INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean 'okPollingFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 14:42:18 INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {file:outbound-channel-adapter} as a subscriber to the 'okPollingFlow.channel#1' channel
+2025-12-26 14:42:18 INFO  o.s.i.channel.DirectChannel - Channel 'printing.data.import.okPollingFlow.channel#1' has 0 subscriber(s).
+2025-12-26 14:42:18 INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean 'okPollingFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 14:42:18 INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-12-26 14:42:18 INFO  o.s.i.c.PublishSubscribeChannel - Channel 'printing.data.import.errorChannel' has 0 subscriber(s).
+2025-12-26 14:42:18 INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2025-12-26 14:42:18 WARN  o.m.t.c.scheduler.SpanInfoManager - mongoConnectionString not found, spanInfoQueue will clear 0 entries
+2025-12-26 14:42:18 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'mssqlPU'
+2025-12-26 14:42:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-26 14:42:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-26 15:50:08 INFO  org.masouras.ApplicationRun - Starting ApplicationRun using Java 25.0.1 with PID 23272 (D:\MyDocuments\Programming\Java\PrintingMaintenance\PrintingDataImport\target\classes started by ChrysanthosM in D:\MyDocuments\Programming\Java\PrintingMaintenance\PrintingMaintenance)
+2025-12-26 15:50:08 INFO  org.masouras.ApplicationRun - The following 1 profile is active: "dev"
+2025-12-26 15:50:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-26 15:50:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-26 15:50:10 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface org.masouras.trace.control.repository.SpanInfoMongoRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-12-26 15:50:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 449 ms. Found 6 JPA repository interfaces.
+2025-12-26 15:50:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-26 15:50:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-12-26 15:50:10 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.ActivityRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 15:50:10 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.LetterSetUpRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 15:50:10 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.PrintingDataRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 15:50:10 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.PrintingFilesRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 15:50:10 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.PrintingOptionsRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 15:50:10 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface org.masouras.squad.printing.mssql.schema.jpa.repository.PrintingSetUpRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2025-12-26 15:50:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 127 ms. Found 1 MongoDB repository interface.
+2025-12-26 15:50:12 INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2025-12-26 15:50:12 INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2025-12-26 15:50:12 WARN  o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'j2SqlBeansRegistry' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static' and/or marking the containing configuration class as 'proxyBeanMethods=false'.
+2025-12-26 15:50:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-26 15:50:14 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-26 15:50:14 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 15:50:14 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-26 15:50:14 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-26 15:50:14 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5643 ms
+2025-12-26 15:50:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-26 15:50:16 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: b70af643-84a9-48b6-a7a2-7b9b6c2f75c2
+2025-12-26 15:50:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-26 15:50:16 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: mssqlPU]
+2025-12-26 15:50:16 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-26 15:50:16 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-26 15:50:17 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-26 15:50:17 WARN  org.hibernate.orm.deprecation - HHH90000025: SQLServerDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-26 15:50:17 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-26 15:50:19 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-26 15:50:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'mssqlPU'
+2025-12-26 15:50:23 INFO  org.reflections.Reflections - Reflections took 2924 ms to scan 169 urls, producing 12296 keys and 48433 values
+2025-12-26 15:50:24 INFO  o.masouras.base.repo.base.AbstractJ2 - PrintingOptionsJ2SQL loaded in 32
+2025-12-26 15:50:25 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 102, SQLState: S0001
+2025-12-26 15:50:25 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Incorrect syntax near '='.
+2025-12-26 15:50:25 ERROR o.m.d.c.s.PrintingLetterSetUpService - Refresh of PrintingLetterSetUpService failed with message: JDBC exception executing SQL [SELECT T0.ACTIVITY_TYPE, T0.CONTENT_TYPE, T0.LETTER_TYPE, J1.XSL_TYPE, J1.RENDER_TYPE, J1.VALID_FLAG FROM PrintingSetUpTable AS T0 FULL JOIN LetterSetUpTable AS J1 ON (T0.LETTER_TYPE = J1.LETTER_TYPE) WHERE (J1.VALID_FLAG NOT = 'DISABLED') ORDER BY T0.SEQ_NO ASC, J1.SEQ_NO ASC] [Incorrect syntax near '='.] [n/a]
+org.hibernate.exception.SQLGrammarException: JDBC exception executing SQL [SELECT T0.ACTIVITY_TYPE, T0.CONTENT_TYPE, T0.LETTER_TYPE, J1.XSL_TYPE, J1.RENDER_TYPE, J1.VALID_FLAG FROM PrintingSetUpTable AS T0 FULL JOIN LetterSetUpTable AS J1 ON (T0.LETTER_TYPE = J1.LETTER_TYPE) WHERE (J1.VALID_FLAG NOT = 'DISABLED') ORDER BY T0.SEQ_NO ASC, J1.SEQ_NO ASC] [Incorrect syntax near '='.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:269)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:172)
+	at org.hibernate.sql.results.jdbc.internal.AbstractResultSetAccess.getMetaData(AbstractResultSetAccess.java:36)
+	at org.hibernate.sql.results.jdbc.internal.AbstractResultSetAccess.getColumnCount(AbstractResultSetAccess.java:52)
+	at org.hibernate.query.results.ResultSetMappingImpl.resolve(ResultSetMappingImpl.java:194)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:340)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:137)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:102)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:165)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:142)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:132)
+	at org.hibernate.query.sql.internal.NativeSelectQueryPlanImpl.performList(NativeSelectQueryPlanImpl.java:135)
+	at org.hibernate.query.sql.internal.NativeQueryImpl.doList(NativeQueryImpl.java:697)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:143)
+	at org.hibernate.query.Query.getResultList(Query.java:120)
+	at org.masouras.data.boundary.RepositoryFacade.getPrintingLetterSetUpProjections(RepositoryFacade.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:724)
+	at org.masouras.data.boundary.RepositoryFacade$$SpringCGLIB$$0.getPrintingLetterSetUpProjections(<generated>)
+	at org.masouras.data.control.service.PrintingLetterSetUpService.refresh(PrintingLetterSetUpService.java:41)
+	at org.masouras.data.control.service.PrintingLetterSetUpService.init(PrintingLetterSetUpService.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:2021)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1985)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1875)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1843)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1719)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at org.masouras.ApplicationRun.main(ApplicationRun.java:13)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '='.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:278)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1787)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:688)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:607)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7745)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4706)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:321)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:253)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(SQLServerPreparedStatement.java:521)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:251)
+	... 80 common frames omitted
+2025-12-26 15:50:25 INFO  o.masouras.base.repo.base.AbstractJ2 - PrintingDataJ2SQL loaded in 14
+2025-12-26 15:50:26 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:85)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:85)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:233)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:219)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176)
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:543)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:104)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:79)
+	... 3 common frames omitted
+2025-12-26 15:50:26 INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Azul Systems, Inc./25.0.1+8-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@e8c9bd4], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@56502cbd, com.mongodb.Jep395RecordCodecProvider@2fe6a72d, com.mongodb.KotlinCodecProvider@d96fa9e]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@4988d5b0], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-12-26 15:50:27 INFO  o.m.app.config.OpenTelemetryConfig - ⚠️ Exporter disabled via configuration, spans will not be exported
+2025-12-26 15:50:27 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-26 15:50:29 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-12-26 15:50:29 INFO  o.masouras.base.repo.base.AbstractJ2 - ActivityJ2SQL loaded in 1
+2025-12-26 15:50:29 INFO  o.masouras.base.repo.base.AbstractJ2 - PrintingFilesJ2SQL loaded in 2
+2025-12-26 15:50:29 INFO  o.masouras.base.repo.base.AbstractJ2 - AutoNumberingJ2SQL loaded in 5
+2025-12-26 15:50:29 INFO  o.masouras.base.repo.base.AbstractJ2 - OptionsJ2SQL loaded in 4
+2025-12-26 15:50:29 INFO  o.masouras.base.repo.base.AbstractJ2 - UsersJ2SQL loaded in 1
+2025-12-26 15:50:29 INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-12-26 15:50:29 INFO  o.s.i.c.PublishSubscribeChannel - Channel 'printing.data.import.errorChannel' has 1 subscriber(s).
+2025-12-26 15:50:29 INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2025-12-26 15:50:29 INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {service-activator} as a subscriber to the 'okPollingFlow.channel#0' channel
+2025-12-26 15:50:29 INFO  o.s.i.channel.DirectChannel - Channel 'printing.data.import.okPollingFlow.channel#0' has 1 subscriber(s).
+2025-12-26 15:50:29 INFO  o.s.i.endpoint.EventDrivenConsumer - started bean 'okPollingFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 15:50:29 INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {file:outbound-channel-adapter} as a subscriber to the 'okPollingFlow.channel#1' channel
+2025-12-26 15:50:29 INFO  o.s.i.channel.DirectChannel - Channel 'printing.data.import.okPollingFlow.channel#1' has 1 subscriber(s).
+2025-12-26 15:50:29 INFO  o.s.i.endpoint.EventDrivenConsumer - started bean 'okPollingFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 15:50:29 INFO  o.s.i.e.SourcePollingChannelAdapter - started bean 'okPollingFlow.org.springframework.integration.config.SourcePollingChannelAdapterFactoryBean#0'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 15:50:29 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-26 15:50:29 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-26 15:50:29 INFO  org.masouras.ApplicationRun - Started ApplicationRun in 22.556 seconds (process running for 23.726)
+2025-12-26 15:50:29 INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+2025-12-26 15:50:29 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] launched with the following parameters: [{'time':'{value=1766757029707, type=class java.lang.Long, identifying=true}'}]
+2025-12-26 15:50:29 INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [pmpMainStep]
+2025-12-26 15:50:30 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 4
+2025-12-26 15:50:30 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] launched with the following parameters: [{}]
+2025-12-26 15:50:30 INFO  o.s.batch.core.job.SimpleStepHandler - Step already complete or not restartable, so no action to execute: StepExecution: id=793, version=35, name=pmpMainStep, status=ABANDONED, exitStatus=FAILED, readCount=0, filterCount=0, writeCount=0, readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=0, rollbackCount=1, exitDescription=org.springframework.batch.core.step.skip.NonSkippableReadException: Non-skippable exception during read
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:104)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:68)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:68)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:165)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:140)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:132)
+	at org.springframework.batch.core.job.AbstractJob.execu
+2025-12-26 15:50:30 INFO  o.s.batch.core.job.SimpleStepHandler - Step already complete or not restartable, so no action to execute: StepExecution: id=794, version=3, name=pmpReportStep, status=COMPLETED, exitStatus=COMPLETED, readCount=0, filterCount=0, writeCount=0, readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0, exitDescription=
+2025-12-26 15:50:30 INFO  o.s.batch.core.job.SimpleStepHandler - Step already complete or not restartable, so no action to execute: StepExecution: id=796, version=3, name=pmpNotifyStep, status=COMPLETED, exitStatus=COMPLETED, readCount=0, filterCount=0, writeCount=0, readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0, exitDescription=
+2025-12-26 15:50:30 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 85ms
+2025-12-26 15:50:30 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 4
+2025-12-26 15:50:30 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 5
+2025-12-26 15:50:30 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 5
+2025-12-26 15:50:30 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 6
+2025-12-26 15:50:30 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 6
+2025-12-26 15:50:30 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 7
+2025-12-26 15:50:30 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 7
+2025-12-26 15:50:30 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 8
+2025-12-26 15:50:30 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 8
+2025-12-26 15:50:30 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 9
+2025-12-26 15:50:30 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 9
+2025-12-26 15:50:30 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 4 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 15:50:30 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 5 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 15:50:30 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 6 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 15:50:30 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 7 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 15:50:30 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 8 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 15:50:30 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 9 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 15:50:30 INFO  o.s.b.core.step.tasklet.TaskletStep - Commit failed while step execution data was already updated. Reverting to old version.
+2025-12-26 15:50:30 INFO  o.s.batch.core.step.AbstractStep - Step: [pmpMainStep] executed in 444ms
+2025-12-26 15:50:30 INFO  o.m.a.b.pmp.config.PmpStepsConfig - pmpMainStep ExitStatus NOOP
+2025-12-26 15:50:30 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] completed with the following parameters: [{'time':'{value=1766757029707, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 594ms
+2025-12-26 15:50:39 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] launched with the following parameters: [{'time':'{value=1766757039642, type=class java.lang.Long, identifying=true}'}]
+2025-12-26 15:50:39 INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [pmpMainStep]
+2025-12-26 15:50:39 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 4
+2025-12-26 15:50:39 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 4
+2025-12-26 15:50:39 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 5
+2025-12-26 15:50:39 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 5
+2025-12-26 15:50:39 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 6
+2025-12-26 15:50:39 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 6
+2025-12-26 15:50:39 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 7
+2025-12-26 15:50:39 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 7
+2025-12-26 15:50:39 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 8
+2025-12-26 15:50:39 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 8
+2025-12-26 15:50:39 INFO  o.m.a.b.p.b.s.PmpMainProcessorValidation - PmpMainProcessorValidation: Validating printingDataEntity 9
+2025-12-26 15:50:39 INFO  o.m.a.b.p.b.s.PmpMainProcessorParser - PmpMainProcessorParser: Parsing printingDataEntity 9
+2025-12-26 15:50:39 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 4 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 15:50:39 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 5 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 15:50:39 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 6 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 15:50:39 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 7 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 15:50:39 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 8 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 15:50:39 WARN  o.m.a.b.pmp.config.PmpStepsConfig - Skipped item id 9 due to Parser failed with message: PrintingLetterSetUp not found
+2025-12-26 15:50:39 INFO  o.s.b.core.step.tasklet.TaskletStep - Commit failed while step execution data was already updated. Reverting to old version.
+2025-12-26 15:50:39 INFO  o.s.batch.core.step.AbstractStep - Step: [pmpMainStep] executed in 125ms
+2025-12-26 15:50:39 INFO  o.m.a.b.pmp.config.PmpStepsConfig - pmpMainStep ExitStatus NOOP
+2025-12-26 15:50:39 INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - Job: [FlowJob: [name=PMP_JOB]] completed with the following parameters: [{'time':'{value=1766757039642, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 164ms
+2025-12-26 15:50:40 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-26 15:50:40 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-26 15:50:40 INFO  o.s.i.e.SourcePollingChannelAdapter - stopped bean 'okPollingFlow.org.springframework.integration.config.SourcePollingChannelAdapterFactoryBean#0'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 15:50:40 INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {service-activator} as a subscriber to the 'okPollingFlow.channel#0' channel
+2025-12-26 15:50:40 INFO  o.s.i.channel.DirectChannel - Channel 'printing.data.import.okPollingFlow.channel#0' has 0 subscriber(s).
+2025-12-26 15:50:40 INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean 'okPollingFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 15:50:40 INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {file:outbound-channel-adapter} as a subscriber to the 'okPollingFlow.channel#1' channel
+2025-12-26 15:50:40 INFO  o.s.i.channel.DirectChannel - Channel 'printing.data.import.okPollingFlow.channel#1' has 0 subscriber(s).
+2025-12-26 15:50:40 INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean 'okPollingFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; from source: 'org.masouras.app.integration.config.FileIntegrationConfig.okPollingFlow(org.masouras.app.integration.control.filter.FileExtensionFilter)'
+2025-12-26 15:50:40 INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-12-26 15:50:40 INFO  o.s.i.c.PublishSubscribeChannel - Channel 'printing.data.import.errorChannel' has 0 subscriber(s).
+2025-12-26 15:50:40 INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2025-12-26 15:50:40 WARN  o.m.t.c.scheduler.SpanInfoManager - mongoConnectionString not found, spanInfoQueue will clear 0 entries
+2025-12-26 15:50:40 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'mssqlPU'
+2025-12-26 15:50:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-26 15:50:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
