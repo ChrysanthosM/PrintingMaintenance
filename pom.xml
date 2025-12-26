@@ -20,7 +20,7 @@
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
         <maven.compiler.compilerArgs>--enable-preview</maven.compiler.compilerArgs>
-        <springframework.version>3.5.7</springframework.version>
+        <spring-boot.version>3.5.7</spring-boot.version>
     </properties>
 
     <build>
@@ -37,7 +37,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>${springframework.version}</version>
+                <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
