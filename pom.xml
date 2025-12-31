@@ -15,6 +15,7 @@
         <module>../../QueryRepository/QueryRepository</module>
         <module>../PrintingDataModel</module>
         <module>../PrintingDataPanel</module>
+        <module>../PrintingPanel</module>
     </modules>
 
     <properties>
