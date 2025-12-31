@@ -6,6 +6,7 @@
     <mapping directory="$PROJECT_DIR$/../PrintingDataModel" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../PrintingDataPanel" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../PrintingPanel" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../QueryRepository/QueryRepository" vcs="Git" />
   </component>
 </project>
