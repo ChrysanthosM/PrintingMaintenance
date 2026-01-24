@@ -22,7 +22,7 @@
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
         <maven.compiler.compilerArgs>--enable-preview</maven.compiler.compilerArgs>
-        <spring-boot.version>4.0.1</spring-boot.version>
+        <spring-boot.version>4.0.2</spring-boot.version>
         <vaadin.version>25.0.3</vaadin.version>
     </properties>
 
@@ -99,6 +99,13 @@
         <dependency>
             <groupId>io.opentelemetry</groupId>
             <artifactId>opentelemetry-exporter-otlp</artifactId>
+        </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/io.opentelemetry/opentelemetry-exporter-logging -->
+        <dependency>
+            <groupId>io.opentelemetry</groupId>
+            <artifactId>opentelemetry-exporter-logging</artifactId>
+            <version>1.58.0</version>
+            <scope>compile</scope>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
