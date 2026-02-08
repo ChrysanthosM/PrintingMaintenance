@@ -12,10 +12,10 @@
     <file url="file://$PROJECT_DIR$/../PrintingDataPanel/PrintingDataPanel/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../PrintingDataPanel/PrintingDataPanel/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../PrintingDataPanel/untitled/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../PrintingDataProcess/PrintingDataProcess/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../PrintingDataProcess/PrintingDataProcess/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../PrintingDataProcess/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../PrintingDataProcess/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../PrintingDataProcessBatch/PrintingDataProcess/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../PrintingDataProcessBatch/PrintingDataProcess/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../PrintingDataProcessBatch/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../PrintingDataProcessBatch/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/PrintingCore/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/PrintingCore/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/PrintingDataImport/src/main/java" charset="UTF-8" />

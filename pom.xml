@@ -15,7 +15,7 @@
         <module>../../QueryRepository/QueryRepository</module>
         <module>../PrintingDataModel</module>
         <module>../PrintingPanel</module>
-        <module>../PrintingDataProcess</module>
+        <module>../PrintingDataProcessBatch</module>
     </modules>
 
     <properties>

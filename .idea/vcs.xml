@@ -4,7 +4,7 @@
     <mapping directory="$PROJECT_DIR$/../PrintingDataCore" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../PrintingDataImport" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../PrintingDataModel" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../PrintingDataProcess" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../PrintingDataProcessBatch" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../PrintingPanel" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../QueryRepository/QueryRepository" vcs="Git" />
