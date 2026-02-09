@@ -16,6 +16,7 @@
         <module>../PrintingDataModel</module>
         <module>../PrintingPanel</module>
         <module>../PrintingDataProcessBatch</module>
+        <module>../PrintingDataProcessQueue</module>
     </modules>
 
     <properties>
