@@ -25,7 +25,8 @@
         <maven.compiler.target>25</maven.compiler.target>
         <maven.compiler.compilerArgs>--enable-preview</maven.compiler.compilerArgs>
         <spring-boot.version>4.0.2</spring-boot.version>
-        <vaadin.version>25.0.3</vaadin.version>
+        <vaadin.version>25.0.5</vaadin.version>
+        <opentelemetry.version>1.59.0</opentelemetry.version>
     </properties>
 
     <build>
@@ -79,7 +80,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-text</artifactId>
-            <version>1.14.0</version>
+            <version>1.15.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
         <dependency>
@@ -94,20 +95,23 @@
             <version>33.5.0-jre</version>
         </dependency>
 
+        <!-- Source: https://mvnrepository.com/artifact/io.opentelemetry/opentelemetry-sdk-extension-autoconfigure -->
         <dependency>
             <groupId>io.opentelemetry</groupId>
-            <artifactId>opentelemetry-sdk</artifactId>
+            <artifactId>opentelemetry-sdk-extension-autoconfigure</artifactId>
+            <version>${opentelemetry.version}</version>
         </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/io.opentelemetry/opentelemetry-exporter-otlp -->
         <dependency>
             <groupId>io.opentelemetry</groupId>
             <artifactId>opentelemetry-exporter-otlp</artifactId>
+            <version>${opentelemetry.version}</version>
         </dependency>
         <!-- Source: https://mvnrepository.com/artifact/io.opentelemetry/opentelemetry-exporter-logging -->
         <dependency>
             <groupId>io.opentelemetry</groupId>
             <artifactId>opentelemetry-exporter-logging</artifactId>
-            <version>1.58.0</version>
-            <scope>compile</scope>
+            <version>${opentelemetry.version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
