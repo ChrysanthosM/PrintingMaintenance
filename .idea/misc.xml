@@ -12,14 +12,18 @@
         <option value="$PROJECT_DIR$/../PrintingDataImport/pom.xml" />
         <option value="$PROJECT_DIR$/../PrintingDataCore/pom.xml" />
         <option value="$PROJECT_DIR$/../../OpenTelemetryTracer/pom.xml" />
+        <option value="$PROJECT_DIR$/../../ApplicationMetrics/pom.xml" />
+        <option value="$PROJECT_DIR$/../../TelemetryMetrics/TelemetryMetrics/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/../../ApplicationMetrics/pom.xml" />
         <option value="$PROJECT_DIR$/../PrintingDataPanel/PrintingDataPanel/pom.xml" />
         <option value="$PROJECT_DIR$/../PrintingDataPanel/pom.xml" />
         <option value="$PROJECT_DIR$/../PrintingDataPanel/untitled/pom.xml" />
         <option value="$PROJECT_DIR$/../PrintingPanel/PrintingPanel/pom.xml" />
+        <option value="$PROJECT_DIR$/../../TelemetryMetrics/TelemetryMetrics/pom.xml" />
       </set>
     </option>
   </component>
