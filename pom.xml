@@ -12,7 +12,7 @@
     <modules>
         <module>../PrintingDataImport</module>
         <module>../PrintingDataCore</module>
-        <module>../../QueryRepository/QueryRepository</module>
+        <module>../../QueryRepository</module>
         <module>../PrintingDataModel</module>
         <module>../PrintingPanel</module>
         <module>../PrintingDataProcessBatch</module>
