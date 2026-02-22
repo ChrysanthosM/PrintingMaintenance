@@ -16,16 +16,6 @@
         <option value="$PROJECT_DIR$/../../TelemetryMetrics/TelemetryMetrics/pom.xml" />
       </list>
     </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/../../ApplicationMetrics/pom.xml" />
-        <option value="$PROJECT_DIR$/../PrintingDataPanel/PrintingDataPanel/pom.xml" />
-        <option value="$PROJECT_DIR$/../PrintingDataPanel/pom.xml" />
-        <option value="$PROJECT_DIR$/../PrintingDataPanel/untitled/pom.xml" />
-        <option value="$PROJECT_DIR$/../PrintingPanel/PrintingPanel/pom.xml" />
-        <option value="$PROJECT_DIR$/../../TelemetryMetrics/TelemetryMetrics/pom.xml" />
-      </set>
-    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_25" default="true" project-jdk-name="azul-25" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
