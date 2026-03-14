@@ -98,7 +98,6 @@
                 <artifactId>artemis-jms-server</artifactId>
                 <version>${artemis.version}</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
     <dependencies>
