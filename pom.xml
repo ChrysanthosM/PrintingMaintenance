@@ -1,5 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.masouras</groupId>
@@ -8,7 +11,8 @@
     <packaging>pom</packaging>
 
     <name>PrintingMaintenance</name>
-    <url>https://maven.apache.org</url>
+
+    <!-- Multi-module project -->
     <modules>
         <module>../PrintingDataImport</module>
         <module>../PrintingDataCore</module>
@@ -22,13 +26,50 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Java 25 -->
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
         <maven.compiler.compilerArgs>--enable-preview</maven.compiler.compilerArgs>
+
+        <!-- Versions -->
         <spring-boot.version>4.1.0</spring-boot.version>
         <vaadin.version>25.2.1</vaadin.version>
-        <artemis.version>2.44.0</artemis.version>
     </properties>
+
+    <!-- BOMs -->
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- Spring Boot BOM -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Vaadin BOM -->
+            <dependency>
+                <groupId>com.vaadin</groupId>
+                <artifactId>vaadin-bom</artifactId>
+                <version>${vaadin.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Artemis BOM -->
+            <dependency>
+                <groupId>org.apache.activemq</groupId>
+                <artifactId>artemis-bom</artifactId>
+                <version>2.54.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <resources>
@@ -37,6 +78,7 @@
                 <filtering>true</filtering>
             </resource>
         </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -46,65 +88,16 @@
         </plugins>
     </build>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring-boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.vaadin</groupId>
-                <artifactId>vaadin-bom</artifactId>
-                <version>${vaadin.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.activemq</groupId>
-                <artifactId>artemis-jakarta-server</artifactId>
-                <version>${artemis.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.activemq</groupId>
-                <artifactId>artemis-jakarta-client</artifactId>
-                <version>${artemis.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.activemq</groupId>
-                <artifactId>artemis-core-client</artifactId>
-                <version>${artemis.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.activemq</groupId>
-                <artifactId>artemis-commons</artifactId>
-                <version>${artemis.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.activemq</groupId>
-                <artifactId>artemis-server</artifactId>
-                <version>${artemis.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.activemq</groupId>
-                <artifactId>artemis-jms-client</artifactId>
-                <version>${artemis.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.activemq</groupId>
-                <artifactId>artemis-jms-server</artifactId>
-                <version>${artemis.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+    <!-- Dependencies (χωρίς versions, BOM τα αναλαμβάνει όλα) -->
     <dependencies>
+
+        <!-- Spring Boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+
+        <!-- Micrometer + Brave -->
         <dependency>
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-tracing</artifactId>
@@ -117,75 +110,96 @@
             <groupId>io.zipkin.brave</groupId>
             <artifactId>brave-context-slf4j</artifactId>
         </dependency>
-        <!-- Source: https://mvnrepository.com/artifact/org.hdrhistogram/HdrHistogram -->
+
+        <!-- Artemis (χωρίς version!) -->
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>artemis-jakarta-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>artemis-jakarta-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>artemis-core-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>artemis-jms-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>artemis-jms-server</artifactId>
+        </dependency>
+
+        <!-- Utilities -->
         <dependency>
             <groupId>org.hdrhistogram</groupId>
             <artifactId>HdrHistogram</artifactId>
             <version>2.2.2</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
+
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-collections4</artifactId>
             <version>4.5.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-text -->
+
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-text</artifactId>
             <version>1.15.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.22.0</version>
         </dependency>
-        <!-- Source: https://mvnrepository.com/artifact/com.google.guava/guava -->
+
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>33.6.0-jre</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
         <dependency>
             <groupId>com.opencsv</groupId>
             <artifactId>opencsv</artifactId>
             <version>5.12.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.xhtmlrenderer/flying-saucer-pdf -->
+
         <dependency>
             <groupId>org.xhtmlrenderer</groupId>
             <artifactId>flying-saucer-pdf</artifactId>
             <version>10.3.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.xmlgraphics/fop -->
+
         <dependency>
             <groupId>org.apache.xmlgraphics</groupId>
             <artifactId>fop</artifactId>
             <version>2.11</version>
         </dependency>
+
     </dependencies>
 
     <repositories>
         <repository>
             <id>maven_central</id>
-            <name>Maven Central</name>
             <url>https://repo.maven.apache.org/maven2/</url>
         </repository>
     </repositories>
+
 </project>
