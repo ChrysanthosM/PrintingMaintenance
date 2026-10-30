@@ -3,7 +3,11 @@
 *.jar
 *.war
 *.ear
+
+### Logs ###
+logs/
 *.log
+*.out
 
 ### Maven ###
 target/
@@ -38,16 +42,12 @@ secrets/
 *.secret
 *.secrets
 
-### Logs ###
-logs/
-*.log
-*.out
-
 ### IntelliJ IDEA ###
 .idea/
 *.iws
 *.ipr
 *.iml
+/*.iml
 out/
 
 ### VS Code ###
