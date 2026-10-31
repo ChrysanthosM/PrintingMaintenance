@@ -201,14 +201,6 @@
             <scope>compile</scope>
         </dependency>
 
-<!--        &lt;!&ndash; Source: https://mvnrepository.com/artifact/org.apache.xmlgraphics/xmlgraphics-commons &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.xmlgraphics</groupId>-->
-<!--            <artifactId>xmlgraphics-commons</artifactId>-->
-<!--            <version>2.12</version>-->
-<!--            <scope>compile</scope>-->
-<!--        </dependency>-->
-
         <!-- Source: https://mvnrepository.com/artifact/org.apache.xmlgraphics/fop -->
         <dependency>
             <groupId>org.apache.xmlgraphics</groupId>
